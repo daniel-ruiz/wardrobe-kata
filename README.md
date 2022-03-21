@@ -18,3 +18,15 @@ Here is the price list for the available wardrobe elements:
     120cm => 111 USD
 
 Write a second function that checks which of the resulting combinations is the cheapest one.
+
+# How to use this setup
+
+In order to install the dependencies of the project, execute the following command
+```bash
+pip install -r requirements.txt
+```
+
+In order to run the tests, simply invoke `pytest`. This Python library should have been installed as a dependency
+```bash
+pytest
+```
