@@ -21,3 +21,15 @@ def test_wall_is_filled_with_two_types_of_module():
         [Module(width=50)],
         [Module(width=25), Module(width=25)],
     ]
+
+def test_wall_is_filled_with_three_types_of_module():
+    available_modules = [Module(width=25), Module(width=50), Module(width=75)]
+    combinations = find_wardrobe_combinations(wall=Wall(width=100), available_modules=available_modules)
+
+    assert combinations == [
+        [Module(width=25), Module(width=25), Module(width=25), Module(width=25)],
+        [Module(width=25), Module(width=25), Module(width=50)],
+        [Module(width=25), Module(width=75)],
+        [Module(width=50), Module(width=50)],
+    ]
+ 
